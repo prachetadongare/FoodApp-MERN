@@ -1,0 +1,118 @@
+.all-restaurants-page {
+    min-height: 100vh;
+    padding: 45px 5% 70px;
+    background: #fffaf6;
+    color: #29231f;
+}
+
+.restaurants-heading {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.back-home-link {
+    display: block;
+    width: fit-content;
+    margin-bottom: 40px;
+    color: #d96327;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.restaurants-heading .section-label {
+    color: #d96327;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.restaurants-heading h1 {
+    margin: 12px 0;
+    font-size: clamp(30px, 5vw, 44px);
+}
+
+.restaurants-heading>p:not(.section-label):not(.results-count) {
+    color: #7d7168;
+    line-height: 1.7;
+}
+
+.all-restaurants-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 600px;
+    height: 56px;
+    margin: 28px auto 12px;
+    padding: 0 18px;
+    border: 1px solid #e8ded5;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.all-restaurants-search:focus-within {
+    border-color: #d96327;
+    box-shadow: 0 0 0 3px #d9632718;
+}
+
+.all-restaurants-search>span {
+    font-size: 28px;
+    color: #d96327;
+}
+
+.all-restaurants-search input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+}
+
+.all-restaurants-search button {
+    border: none;
+    background: transparent;
+    color: #76675c;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.results-count {
+    color: #82766d;
+    font-size: 14px;
+    text-align: left;
+    max-width: 600px;
+    margin: 12px auto 0;
+}
+
+.all-restaurants-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.restaurants-status {
+    padding: 50px 15px;
+    text-align: center;
+    color: #786b61;
+}
+
+.restaurants-status button {
+    margin-top: 12px;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #d96327;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .all-restaurants-page {
+        padding: 25px 16px 50px;
+    }
+
+    .back-home-link {
+        margin-bottom: 30px;
+    }
+}

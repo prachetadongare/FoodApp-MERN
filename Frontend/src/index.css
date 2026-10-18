@@ -1,0 +1,40 @@
+/* Apply consistent sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove default browser spacing */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+/* Global typography and background */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #242424;
+  background-color: #fffaf5;
+  line-height: 1.5;
+}
+
+/* Make form controls use the same font */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Keep images responsive */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit link color when no specific style is applied */
+a {
+  color: inherit;
+}

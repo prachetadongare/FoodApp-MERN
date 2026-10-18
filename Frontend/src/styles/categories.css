@@ -1,0 +1,346 @@
+.categories-section {
+    padding: 55px 6%;
+    background: #fffaf6;
+}
+
+.categories-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.section-eyebrow {
+    color: #f05a24;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.categories-heading h2 {
+    color: #29221f;
+    font-size: clamp(26px, 3vw, 36px);
+    margin: 0 0 8px;
+}
+
+.categories-heading p:not(.section-eyebrow) {
+    color: #746c66;
+    margin: 0;
+}
+
+.view-all-link,
+.back-home-link {
+    color: #e95722;
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.view-all-link:hover,
+.back-home-link:hover {
+    color: #bc3e13;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.category-card {
+    display: block;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #f0e5dd;
+    border-radius: 16px;
+    color: #29221f;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgb(50 30 15 / 5%);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgb(50 30 15 / 12%);
+}
+
+.category-image-wrapper {
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+    background: #f4eee8;
+}
+
+.category-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.25s ease;
+}
+
+.category-card:hover .category-image {
+    transform: scale(1.05);
+}
+
+.category-card h3 {
+    margin: 0;
+    padding: 16px;
+    font-size: 18px;
+}
+
+.category-message {
+    padding: 30px 0;
+    text-align: center;
+    color: #746c66;
+}
+
+.all-categories-page {
+    min-height: 100vh;
+    padding: 25px 6% 60px;
+    background: #fffaf6;
+}
+
+.all-categories-header {
+    max-width: 850px;
+    margin: 55px auto 45px;
+    text-align: center;
+}
+
+.all-categories-header h1 {
+    margin: 0 0 15px;
+    color: #29221f;
+    font-size: clamp(32px, 5vw, 54px);
+}
+
+.all-categories-header>p:not(.section-eyebrow) {
+    color: #746c66;
+    font-size: 18px;
+}
+
+.category-search {
+    width: 100%;
+    max-width: 750px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    padding: 18px 22px;
+    border: 1px solid #e8d9ce;
+    border-radius: 15px;
+    background: #fff;
+    color: #29221f;
+    font-size: 16px;
+    outline: none;
+}
+
+.category-search:focus {
+    border-color: #f05a24;
+    box-shadow: 0 0 0 3px rgb(240 90 36 / 12%);
+}
+
+.all-category-grid {
+    margin-top: 35px;
+}
+
+@media (max-width: 900px) {
+    .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .categories-section {
+        padding: 40px 5%;
+    }
+
+    .categories-heading {
+        align-items: flex-start;
+    }
+
+    .category-grid {
+        gap: 14px;
+    }
+
+    .category-image-wrapper {
+        height: 125px;
+    }
+
+    .category-card h3 {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .all-categories-page {
+        padding: 20px 5% 45px;
+    }
+
+    .all-categories-header {
+        margin-top: 40px;
+    }
+}
+
+
+.category-results-section,
+.category-food-section {
+    margin-top: 40px;
+}
+
+.category-results-section>h2,
+.category-food-heading h2 {
+    color: #29221f;
+    font-size: 28px;
+    margin-bottom: 22px;
+}
+
+.category-select-card {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+}
+
+.category-select-card.selected-category {
+    border: 2px solid #f05a24;
+    box-shadow: 0 0 0 3px rgb(240 90 36 / 12%);
+}
+
+.category-food-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.category-food-heading h2 {
+    margin: 0;
+}
+
+.clear-category-button {
+    padding: 11px 16px;
+    border: 1px solid #f05a24;
+    border-radius: 10px;
+    background: #fff;
+    color: #e95722;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.clear-category-button:hover {
+    background: #fff0e8;
+}
+
+.category-food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.category-food-card {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #f0e5dd;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgb(50 30 15 / 5%);
+    transition: transform 0.2s ease;
+}
+
+.category-food-card:hover {
+    transform: translateY(-4px);
+}
+
+.category-food-image-wrapper {
+    height: 200px;
+    overflow: hidden;
+    background: #f4eee8;
+}
+
+.category-food-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-food-info {
+    padding: 17px;
+}
+
+.category-food-info h3 {
+    margin: 0 0 10px;
+    color: #29221f;
+    font-size: 19px;
+}
+
+.category-food-info>p {
+    min-height: 40px;
+    margin: 0 0 16px;
+    color: #746c66;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.category-food-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-food-bottom strong {
+    color: #e95722;
+    font-size: 20px;
+}
+
+.category-food-bottom span {
+    color: #806020;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .category-food-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .category-food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-food-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .category-food-image-wrapper {
+        height: 220px;
+    }
+}
+
+
+.category-cart-controls {
+    margin-top: 12px;
+}
+
+.category-add-button {
+    padding: 9px 14px;
+    border: 1px solid #6c3ce9;
+    border-radius: 7px;
+    background: #fff;
+    color: #6c3ce9;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.category-add-button:hover {
+    background: #6c3ce9;
+    color: #fff;
+}
+
+.category-add-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
